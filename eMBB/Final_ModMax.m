@@ -15,7 +15,7 @@ tic
 %DFrate=[1800*10^(6) 2000*10^(6)];
 Z=7;
 for z=1:Z
-    [F,Fup, Fcp, S, La, P, u, U,Actf,U_t,L_s,r_s,L_c,maxdup,maxdcp,K,Cp,Ol,t0,dels,Dtup,Dtcp,deltup,eta1,eta, idpr,DFrate]  =Input(z);
+    [F,Fup, Fcp, S, La, P, u, U,Actf,U_t,L_s,r_s,L_c,maxdup,maxdcp,K,Cp,Ol,t0,dels,Dtup,Dtcp,deltup,eta1,eta, idpr,DFrate]  =Input_eMBB_Case(z);
     
     DFrate(1,z)=idpr;
     Dtup=zeros(1,Fup);

@@ -67,7 +67,7 @@ P = cat(3,P1,[0.5 0.4 0.1 0 0 0;
     
 Z=7;
 for z=1:Z
-    [F,Fup, Fcp, S, La, P, u, U,Actf,U_t,L_s,r_s,L_c,maxdup,maxdcp,K,Cp,Ol,t0,dels,Dtup,Dtcp,deltup,eta1,eta, ipdr, DFrate]  =Input(z);
+    [F,Fup, Fcp, S, La, P, u, U,Actf,U_t,L_s,r_s,L_c,maxdup,maxdcp,K,Cp,Ol,t0,dels,Dtup,Dtcp,deltup,eta1,eta, ipdr, DFrate]  =Input_eMBB_Case(z);
     
     DFrate(1,z)=ipdr;
     Dtup=zeros(1,Fup);
